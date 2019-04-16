@@ -81,12 +81,7 @@ public class KoreanAnalyzer extends StopwordAnalyzerBase {
     tok = new PunctuationDelimitFilter(tok);
     tok = new StopFilter(tok, stopwords);
     
-    return new TokenStreamComponents(src, tok) {
-      @Override
-      protected void setReader(final Reader reader)  {
-        super.setReader(reader);
-      }
-    };
+    return new TokenStreamComponents(src, tok);
 	    
   }
     
