@@ -17,8 +17,6 @@ package org.apache.lucene.analysis.ko;
  * limitations under the License.
  */
 
-import java.io.IOException;
-import java.io.Reader;
 import java.util.Arrays;
 import java.util.List;
 
@@ -81,13 +79,7 @@ public class KoreanAnalyzer extends StopwordAnalyzerBase {
     tok = new PunctuationDelimitFilter(tok);
     tok = new StopFilter(tok, stopwords);
     
-    return new TokenStreamComponents(src, tok) {
-      @Override
-      protected void setReader(final Reader reader)  {
-        super.setReader(reader);
-      }
-    };
-	    
+    return new TokenStreamComponents(src, tok);
   }
     
   /**
