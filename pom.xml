@@ -8,7 +8,7 @@
     <repository>
       <id>central</id>
       <name>Central Repository</name>
-      <url>http://repo.maven.apache.org/maven2</url>
+      <url>https://repo1.maven.org/maven2</url>
       <layout>default</layout>
       <snapshots>
         <enabled>false</enabled>
@@ -18,8 +18,8 @@
 
 <properties>
     <java.version>1.8</java.version>
-    <elasticsearch.version>7.14.1</elasticsearch.version>
-    <lucene.version>8.9.0</lucene.version>
+    <elasticsearch.version>7.16.0</elasticsearch.version>
+    <lucene.version>8.10.1</lucene.version>
     <org.slf4j.version>1.6.2</org.slf4j.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
