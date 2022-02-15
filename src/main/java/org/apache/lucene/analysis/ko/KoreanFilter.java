@@ -105,7 +105,8 @@ public final class KoreanFilter extends TokenFilter {
 //    if(this.queryMode)
 //    	this.morph.setDivisibleOne(false);
   }
-  
+
+	@Override
   public boolean incrementToken() throws IOException {
     if (!morphQueue.isEmpty()) {
       restoreState(currentState);

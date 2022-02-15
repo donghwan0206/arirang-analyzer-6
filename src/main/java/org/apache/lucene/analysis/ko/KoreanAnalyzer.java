@@ -25,7 +25,7 @@ import org.apache.lucene.analysis.LowerCaseFilter;
 import org.apache.lucene.analysis.StopFilter;
 import org.apache.lucene.analysis.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.standard.ClassicFilter;
+import org.apache.lucene.analysis.classic.ClassicFilter;
 
 /**
  * A Korean Analyzer

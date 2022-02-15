@@ -1,14 +1,13 @@
 package org.apache.lucene.ko;
 
-import junit.framework.TestCase;
-
+import org.apache.lucene.analysis.BaseTokenStreamTestCase;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.ko.KoreanAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
 
-public class TestKoreanAnalyzer extends TestCase {
+public class TestKoreanAnalyzer extends BaseTokenStreamTestCase {
 
 	public void testKoreanAnalyzer() throws Exception {
 		
