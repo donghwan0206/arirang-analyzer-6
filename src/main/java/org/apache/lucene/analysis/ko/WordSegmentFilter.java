@@ -35,12 +35,12 @@ public final class WordSegmentFilter extends TokenFilter {
     private final OffsetAttribute offsetAtt = addAttribute(OffsetAttribute.class);
     private final MorphemeAttribute morphAtt = addAttribute(MorphemeAttribute.class);
     
-	protected WordSegmentFilter(TokenStream input) {
+	public WordSegmentFilter(TokenStream input) {
 		super(input);
 		segmentAnalyzer = new WordSegmentAnalyzer();
 	}
 
-	protected WordSegmentFilter(TokenStream input, boolean hasOrigin) {
+	public WordSegmentFilter(TokenStream input, boolean hasOrigin) {
 		this(input);
 		this.hasOrigin = hasOrigin;
 	}
